@@ -1,0 +1,22 @@
+
+.color{
+    background-color: green;
+    color: white;
+    padding: 40px;
+}
+.style{
+    display: inline-flex;
+}
+.test{
+    padding: 25%;
+    color: rgb(14, 1, 1);
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+#btn-user{
+    background-color: #fff;
+    color: #000;
+}
+h3{
+    color: #000;
+}

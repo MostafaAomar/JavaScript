@@ -1,0 +1,15 @@
+#test{
+    color: brown;
+}
+
+ul > li{
+    color: cyan;
+
+}
+ol li{
+    color: blue;
+    
+}
+ i ~ li{
+    background-color: blueviolet;
+}

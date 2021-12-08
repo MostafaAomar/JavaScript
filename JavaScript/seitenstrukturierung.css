@@ -1,0 +1,25 @@
+﻿#rahmen {
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+#navi {
+    width: 800px;
+    height: 50px;
+    background-color: grey;
+}
+
+#links {
+    width: 400px;
+    height: 500px;
+    background-color: red;
+    float:left;
+}
+#rechts {
+    width: 400px;
+    height: 500px;
+    background-color: blue;
+    float: left;
+}

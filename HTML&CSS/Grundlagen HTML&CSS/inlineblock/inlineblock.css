@@ -1,0 +1,14 @@
+﻿span, i, b {
+    width: 300px;
+    height: 300px;
+    color: blueviolet;
+    background-color: aqua;
+    display: inline-block;
+}
+
+div, p {
+    width: 400px;
+    height: 400px;
+    background-color: brown;
+    display: inline-block;
+}

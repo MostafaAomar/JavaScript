@@ -1,0 +1,40 @@
+﻿
+#absolut{
+    width: 300px;
+    height: 300px;
+    font-size: 20px;
+    background-color: red;
+}
+
+#prozent{
+    width: 20%;
+    height: 20%;
+    background-color: grey;
+    padding: 2em;
+}
+
+html {
+    /* html muss 100% Höhe haben, damit
+    der Body sich ausdehnen kann */
+    
+    height: 100%;
+    border: 12px solid red;
+}
+
+body {
+    /* Der Body dehnt sich durch die 
+    Höhenangabe auf 100% aus 
+    Beide Höhen sind notwendig */
+    border: solid;
+    height: 100%;
+    font-size: 1em;
+}
+
+#em {
+    font-size:2em;
+}
+
+#rem {
+    font-size: 2rem;
+}
+

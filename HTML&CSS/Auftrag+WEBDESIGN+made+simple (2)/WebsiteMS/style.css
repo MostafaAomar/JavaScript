@@ -1,0 +1,83 @@
+﻿/* 
+
+Blau: #1F4E8C
+Grau: #3D3F45
+Hellgrau: #E5E5E5
+Rot: #A62C21
+
+ */
+
+
+body {
+    
+    height: 2000px;
+    font-family: 'Raleway', 'Lato', Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.headernav {
+    width: 100%;
+    height: 50px;
+    background-color: #3D3F45;
+    position: relative; 
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.headernav > a > img {
+    height: 30px;
+    width: auto;
+    position: absolute;  
+    top: 10px;
+    left: 2rem; 
+}
+
+.headernav > ul {
+    padding: 0;
+    height: 100%;
+    position: absolute;
+    right: 2rem;
+    /* top: .8rem; */
+}
+
+.headernav > ul > li {
+    display: inline-block;
+    height: 100%;
+    padding: .3rem;
+}
+
+.headernav > ul > li > a {
+   margin-top: .5rem;
+   display: inline-block;
+}
+
+.headernav > ul > li > a:link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.headernav > ul > li > a:hover {
+    color: #E5E5E5;
+    text-decoration: none;
+}
+
+.headernav > ul > li > a:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.headernav > ul > li > a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.active {
+    background-color: #A62C21;
+}
+
+
+

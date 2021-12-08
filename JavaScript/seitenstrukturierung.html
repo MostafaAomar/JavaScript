@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seitenstrukturierung</title>
+    <link rel="stylesheet" href="seitenstrukturierung.css">
+</head>
+<body>
+    
+
+    <div id="rahmen">
+        
+        <div id="navi">
+           hier kommen die Links hin
+        </div>
+        
+        <h1>So lief es bis HTML 4.0</h1>
+    
+        Ich bin noch eine Spalte Rahmen
+        <div id="links">
+            ich bin jetzt in der linken Spalte
+        
+        </div>
+
+        <div id="rechts">
+            ich bin natürlich rechts
+        
+        </div>
+    
+    
+    </div>
+
+    <h1>So läuft es seit html 5:</h1>
+    <p>Wichtig: Die Tag zur Seitenstrukturierung haben eine 
+        semantische Bedeutug, d.h. der Inhalt ist wichtig und
+        muss zu der Seite und dem Inhalt passen, sonst gibt es
+        Nachteile beim Ranking</p>
+    <main><b>main</b> Hauptbereich - ein mal pro Seite</main>
+    <nav><b>main</b> Navigation</nav>
+    <header><b>header</b> Kopf - kann auch in section oder article enthalten sein</header>
+    <section><b>section</b> Ein zusammenhängender Bereich verschiedener Element
+            und kann z.B. einen eigenen header bekommen oder mehrere
+            article, hat in der Regel eine eigene Überschrift und 
+            vereinigt somit meherere Elemente</section>
+    <article><b>article</b> Beschreibt einen Artikel und kann ebenfalls einen   
+            header bekommen und meherer Elemente enthalten</article>
+    <aside><b>aside</b> Zusatzabschnitt, steht oft an der Seite und hat 
+        z.B. Zusatzlinks zu meinen Sehenswürdigkeiten oder 
+        eine Unternavigation für die Seite
+    </aside>
+    <footer><b>footer</b> wie der Kopf</footer>
+    <div><b>div</b> nach wie vor beliebt und viel eingesetzt, aber ohnen jede
+        semantische Bedeutung</div>
+
+    Beispiel:
+    <section>
+        <header>
+            <h1>Sehenswürdigkeiten</h1>
+            <p>Ein wenig über Sehenswürdikeiten erzählen</p>
+        </header>
+            <article>
+                <header>
+                    <h1>Siegessäule</h1>
+                    <p>Die Siegessäule und ihr Weg durch die Geschichte</p>
+                </header>
+                <p>Hier steht jetzt alles über die Siegessäule</p>
+            </article>
+            <article>
+                <header>
+                    <h1>Brandenburger Tor</h1>
+                    <p>Das Tor und die Reiter</p>
+                </header>
+                <p>Hier steht jetzt alles über das Tor</p>
+            </article>
+    </section>
+   
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+﻿#relDiv {
+    width: 400px;
+    height: 300px;
+    background-color: royalblue;
+    position: relative;
+    top: 50px;
+    left: 500px;
+
+}
+
+#absDiv {
+    width: 50px;
+    height: 50px;
+    background-color: aquamarine;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+
+
+span {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+i {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+body {
+    height: 5000px;
+}
+
+#fixedDiv {
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#stickyDiv {
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    position: sticky;
+    top: 80px;
+    bottom: 80px;
+    
+}

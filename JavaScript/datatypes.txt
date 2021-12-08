@@ -1,0 +1,28 @@
+Number > Jede Zahl inkl. decimals
+1
+3.41356
+
+
+Strings > Zeichenketten
+"double quotes"
+'single quotes'
+
+
+Boolean > Wahrheitswerte
+0
+1
+
+false
+true
+
+
+Null > Fehlen eines Wertes - null ist ein Keyword
+
+
+Undefined > Fehlen eines Wertes - undefined ist ein Keyword, andere Bedeutung als null
+
+
+Symbol > eindeutige Bezeichner für komplexere Kodierungen.
+
+
+Object > Sammlung von zusammengehörigen Daten / Funktionen
