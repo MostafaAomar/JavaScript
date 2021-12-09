@@ -1,0 +1,26 @@
+body {
+    background-color: #F6F2D4;
+    color: #22577E;
+}
+
+.container {
+    margin: auto;
+    width: 50%;
+}
+
+.btn {
+    background-color: #22577E;
+    display: inline-block;
+    padding: 2px 4px;
+    color: snow;
+}
+
+.btn:hover {
+    color: orange;
+}
+
+#todo-tbl {
+    background-color: #95D1CC;
+    border: 1px solid #5584AC;
+    margin-top: 20px;
+}
