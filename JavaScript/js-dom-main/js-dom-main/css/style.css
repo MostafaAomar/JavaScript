@@ -1,0 +1,13 @@
+.hot{
+    background-color: tomato;
+    color: snow;
+}
+
+.cool{
+    background-color: blue;
+    color: yellow;
+}
+
+.large{
+    font-size: 4rem;
+}

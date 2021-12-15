@@ -1,0 +1,21 @@
+.hot{
+    background-color: red;
+    color: snow;
+}
+.cool{
+    background-color: blue;
+    color: yellow;
+}
+
+.large{
+    font-size: 50px;
+    background-color: green;
+}
+.list{
+    background-color: yellow;
+    color: aqua;
+}
+.list:hover{
+    color: black;
+    background-color: #fff;
+}
