@@ -1,0 +1,29 @@
+ul{
+    padding:0;
+}
+nav ul{
+    list-style:none;
+}
+nav li{
+    display:inline-block;    
+}
+nav ul li a{
+    display:inline-block;/* transform */
+    background: rgba(0,0,255,0.5);
+    border: 1px solid white;
+    border-radius:5px;
+    color:white;
+    text-decoration:none;
+    padding:0 10px 2px 10px;
+    margin-right:10px;/* Zwischenabstand */
+    transition: all 1s;/* Animation */
+}
+/* pseudo Klassen */
+nav ul li a:hover{
+    background: rgba(0,255,0,0.5);
+    transform: scale(1.1);
+}
+/* Aktive Links to keep the button green after clicken */
+.activ{
+    background: rgba(0,255,0,0.5);
+}

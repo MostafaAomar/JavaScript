@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+img{
+    display: block;
+}
+.width{
+    width: 40%;
+    height: auto;
+}
+.height{
+    width: auto;
+    height: 30%;
+}
+#test01{
+    min-width: 400px;
+}
+#test02{
+    max-width: 400px;
+}

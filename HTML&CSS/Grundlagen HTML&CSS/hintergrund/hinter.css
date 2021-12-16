@@ -51,6 +51,16 @@ div{
 }
 .test09{
     background-image: url(parken.png);
-    background-repeat: no-repeat;
+    background-repeat: fixed;
     background-position: right 10px bottom 50px;
+}
+/* follow these tags to make it right 
+color
+image
+repeat
+attachment
+position
+ */
+.test10{
+    background: coral url("parken.png") repeat-y;
 }
