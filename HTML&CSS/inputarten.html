@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputarten</title>
+</head>
+<body>
+    <h1>Formulareingaben</h1>
+    <h2>Textinputs</h2>
+    <h3>Input-Type: text</h3>
+        <input type="text" name="name" value="" placeholder="Vollständigen Namen eingeben">
+
+    <h3>Input-Type: password</h3>
+        <input type="password">
+
+    <h3>Input-Type: search</h3>
+        <input type="search">
+
+    <h3>Input-Type: email</h3>
+        <input type="email">
+
+    <h3>Input-Type: url</h3>
+        <input type="url">
+
+    <h3>Input-Type: tel</h3>
+        <input type="tel">
+
+    <h2>Input für Zeitangaben</h2>
+
+        <h3>Input-Type: date</h3>
+            <input type="date"> 
+
+        <h3>Input-Type: datetime-local</h3>
+            <input type="datetime-local">
+
+        <h3>Input-Type: month</h3>
+            <input type="month">
+
+        <h3>Input-Type: week</h3>
+            <input type="week">
+
+        <h3>Input-Type: time</h3>
+            <input type="time">  
+
+
+    <h2>Input für Zahlen</h2>
+
+        <h3>Input-Type: number</h3>
+            <input type="number" name="alter" value="18">
+
+        <h3>Input-Type: range</h3>
+            <input type="range">
+
+
+    <h2>Sonstige Inputs</h2>
+
+            <p>ich bin vor dem hidden</p>
+
+        <h3>Input-Type: hidden</h3>
+            <input type="hidden">
+
+            <p>ich komme nach dem Hidden</p>
+
+        <h3>Input-Type: color</h3>
+            <input type="color">   
+
+    <h2>weitere Eingabemöglichkeiten für den User</h2>
+
+        <h3>Input-Type: radio</h3>
+        <p>Dient der eindeutigen Auswahl</p>
+
+        <p>Welche Farbe beschreibt das Kürzel #FFF?</p>
+        <input type="radio" name="frage1" value="rot">Rot
+        <input type="radio" name="frage1" value="schwarz">Schwarz
+        <input type="radio" name="frage1" value="weiß">Weiß
+        <input type="radio" name="frage1" value="grün">Grün
+
+        <h3>Input-Type: checkbox</h3>
+        <p>Dient der Mehrfachauswahl</p>
+
+        <p>Welche Sportart betreiben Sie am liebsten?</p>
+        <input type="checkbox" name="sportart" value="schwimmen">Schwimmen
+        <input type="checkbox" name="sportart" value="fussball">Fußball
+        <input type="checkbox" name="sportart" value="karate">Karate
+        <input type="checkbox" name="sportart" value="handball">Handball
+
+        <h3>Weiterer Typ: select</h3>
+        <p>Dient der Einfach-/Mehrfachauswahl bestimmter Begriffe</p>
+
+        <select name="obst" size="1">
+            <option value="pflaume">Pflaume</option>
+            <option value="apfel">Apfel</option>
+            <option value="birne">Birne</option>
+            <option value="kiwi">Kiwi</option>
+            <option value="mango">Mango</option>        
+        </select>
+
+        <h4>Select mit Optionsgruppe und ggf. Mehrfachauswahl</h4>
+
+        <select name="programmiersprachen" multiple>
+            <optgroup label="Frontend-Sprachen">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+            </optgroup>
+            <optgroup label="Backend-Sprachen">
+                <option value="php">PHP</option>
+                <option value="java">JAVA</option>
+                <option value="cplusplus">CPLUSPLUS</option>
+            </optgroup>
+
+        </select>
+
+         <h3>textarea</h3>
+         <p>Dient dem Erfassen von mehr Text</p>
+         <textarea name="kommentar" cols="200" rows="20">Bitte geben Sie hier Ihren Kommentar ab:</textarea>
+
+
+        <h2>Buttons</h2>
+
+        <h2>Submit-Button</h2>
+        <p>Schickt die Formularinhalte an den Server</p>
+        <button type="submit">Ich bin ein Submit</button>
+
+        <h2>Reset-Button</h2>
+        <p>Löscht alle vorhandenen Formulareinträge</p>
+        <button type="reset">Ich bin ein Reset</button>
+
+        <h3>Allgemeiner Button</h3>
+        <button type="button">Beliebige Beschriftung oder auch ein Bild</button>
+
+        <p>Alte Alternativen:</p>
+        <input type="submit" value="Submit-Button">
+        <input type="reset" value="Reset-Button">
+        <input type="button" value="beliebiger Button">
+
+
+<br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular</title>
+</head>
+<body>
+    <form action="form.html" method="get">
+
+        <fieldset>
+            <legend>Persönlichen Daten</legend>
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name" placeholder="Dein Name" pattern=".*Siegi.*"><br><br>
+            <fieldset>
+                <legend>Geschlecht</legend>
+                <label for="männlich">Männlich</label>
+                <input id="männlich" type="radio" name="geschlecht" value="m">
+                <label for="weiblich">Weiblich</label>
+                <input id="weiblich" type="radio" name="geschlecht" value="w">
+                <label for="devers">Devers</label>
+                <input id="deverse" type="radio" name="geschlecht" value="d"> <br><br>
+            </fieldset>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Login-Daten</legend>
+            <label for="email">E-Mail</label>
+            <input id="email"type="email" name="email" placeholder="Deine Mail-Adresse" pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\u0022(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*\u0022)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])"><br><br>
+            <label for="password">Passwort:</label>
+            <input id="password"type="password" name="passwort" placeholder="Dein Passwort" title="Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"><br><br>
+        </fieldset>
+        <button type="submit">Registrieren!!</button>
+
+
+
+    </form>
+
+     <!-- <form action="form.html" method="post">
+
+        <input type="text" name="name" placeholder="Dein Name"><br><br>
+        <input type="radio" name="geschlecht" value="m"> männlich
+        <input type="radio" name="geschlecht" value="w"> weiblich
+        <input type="radio" name="geschlecht" value="d"> deverse <br><br>
+        <input type="email" name="email" placeholder="Deine Mail-Adresse"><br><br>
+        <input type="password" name="passwort" placeholder="Dein Passwort"><br><br>
+
+        <button type="submit">Registrieren!!</button>
+
+
+    </form> -->
+
+</body>
+</html>
