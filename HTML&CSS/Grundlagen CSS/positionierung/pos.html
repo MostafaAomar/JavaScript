@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positionierung</title>
+    <link rel="stylesheet" href="pos.css">
+</head>
+<body>
+    Text vor
+    <div id="relDiv">Text im ersten Div
+        <div id="absDiv">
+        
+        </div>
+    
+    </div>
+    Text nach <span>Relativ</span>zu sich selbst. Und dagegen steht <i>absolut</i>Der Text rückt auf.
+
+    <p>position: absolut ist abhängig vom Vater-Tag und positioniert sich aus dem Textfluss heraus</p>
+    <p>position: relative ist von der eigenen Position abhängig, der Textfluss bleibt erhalten.</p>
+
+    <div id="fixedDiv"></div>
+    <div id="stickyDiv"></div>
+</body>
+</html>

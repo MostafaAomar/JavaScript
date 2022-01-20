@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webdesign made simple - Leistungen</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/grid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="headernav">
+
+        <!-- Grid einbauen in die headernav
+            => headernav bleibt auf 100% und geht über die gesamte Breite
+            => Grid-System ist enthalten -->
+
+        <!-- Desktop Navigation -->
+        <div class="container desktop-nav">
+            <div class="row">
+                <div class="column-6">
+                    <a href="index.html">
+                        <img src="src/img/webdesign-logo.png" alt="Logo der Webdesgin made simple Seite">
+                    </a>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="leistungen.html">Leistungen</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="impressum.html">Impressum</a></li>
+                    </ul>                  
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="container mobile-nav">
+            <div class="row">
+                <div class="column-6">
+                    <a href="index.html">
+                        <img src="src/img/webdesign-logo.png" alt="Logo der Webdesgin made simple Seite">
+                    </a>
+
+                    <div class="mobile-nav-dropdown clearfix"> 
+
+                        <div class="mobile-nav-button">
+                            <span>&equiv;</span>
+                        </div>
+
+                        <div class="mobile-nav-content clearfix">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li class="active"><a href="leistungen.html">Leistungen</a></li>
+                                <li><a href="kontakt.html">Kontakt</a></li>
+                                <li><a href="impressum.html">Impressum</a></li>
+                            </ul> 
+                        </div>
+
+                    </div>                
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </nav> 
+    <header class="header-banner-klein"></header>
+</body>
+</html>

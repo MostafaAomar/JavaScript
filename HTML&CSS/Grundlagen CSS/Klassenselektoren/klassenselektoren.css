@@ -1,0 +1,17 @@
+﻿.gefahr {
+    color: red;
+}
+
+p.gefahr {
+    text-decoration: underline;
+}
+
+.wichtig {
+    font-weight: bold;
+}
+
+span.gefahr {
+    background-color: grey;
+}
+
+

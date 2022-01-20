@@ -1,0 +1,90 @@
+﻿/* 
+Quadratisch (400px*400px)
+Rahmen 
+Abstand von 20px
+ */
+
+div {
+    width: 400px;
+    height: 400px;
+    border: 2px solid black; 
+    margin: 20px 0;
+}
+
+.test01 {
+    background-color: aqua;
+}
+
+.test02 {
+    background-image: url("parken.png");
+}
+
+.test03 {
+    background-image: url("parken.png");
+    background-repeat: repeat-x;
+}
+
+.test04 {
+    background-image: url("parken.png");
+    background-repeat: repeat-y;
+}
+
+.test05 {
+    background-image: url("parken.png");
+    background-repeat: no-repeat;
+}
+
+.test06 {
+    background-image: url("parken.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* 
+erster Wert: horizontale
+left   center    right
+zweiter Wert: vertikale
+top    center    bottom
+ */
+
+.test07 {
+    background-image: url("parken.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+/* .test08 {
+    background-image: url("parken.png");
+    background-repeat: no-repeat;
+    background-position: 100px 150px;
+} */
+
+.test08 {
+    background-image: url("parken.png");
+    background-repeat: no-repeat;
+    background-position: right 50px bottom 50px;
+}
+
+.test09 {
+    background-image: url("parken.png");
+    background-attachment: fixed;
+}
+
+/* 
+Reihenfolge der Element für Kurzschreibweise background:
+background-color
+background-image
+background-repeat
+background-attachment
+background-postion
+
+Man kann Eigenschaften weg lassen, aber die Reihenfolge darf nicht geändert werden!
+ */
+
+.test10 {
+    background: pink url("parken.png") repeat-y fixed left 20px top 50px ;
+}
+/* 
+.test10 {
+    background: url("parken.png") repeat-y left 20px top 50px ;
+} */

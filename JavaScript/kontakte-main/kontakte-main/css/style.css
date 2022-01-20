@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+:root {
+  --success: limegreen;
+  --error: rgb(236, 26, 72);
+}
+
+/* TAGS */
+body {
+  background-color: lightgrey;
+  font-family: "Montserrat", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* CLASSES */
+.container {
+  background-color: snow;
+  width: 80vw;
+  margin: 0 auto;
+  padding-left: 10px;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.lead {
+  padding-top: 20px;
+}
+/*  FORMULAR */
+.form,
+.kontakte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-input {
+  /* position: relative; */
+  width: 300px;
+}
+
+.form-input label {
+  display: block;
+  font-size: 1.5rem;
+}
+
+.form-input input,
+.suche {
+  display: block;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  width: 290px;
+}
+
+.form-input input:focus {
+  border-color: lightskyblue;
+  outline: 0;
+}
+
+.form-input.success input {
+  border-color: var(--success);
+}
+
+.form-input.error input {
+  border-color: var(--error);
+}
+
+.form-input small {
+  color: var(--error);
+  /* position: absolute; */
+  visibility: hidden;
+  bottom: 0;
+  left: 0;
+}
+
+.form-input.error small {
+  visibility: visible;
+}
+
+.kontakt-liste {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 380px;
+}
+
+/* .ausblenden */
+.hide {
+  display: none;
+}
+
+.add-btn {
+  background-color: limegreen;
+  border-color: limegreen;
+  border-radius: 5px;
+  color: whitesmoke;
+  font-weight: bolder;
+}
+
+.clear-btn {
+  background-color: tomato;
+  border-color: tomato;
+  border-radius: 5px;
+  color: whitesmoke;
+  font-weight: bolder;
+}

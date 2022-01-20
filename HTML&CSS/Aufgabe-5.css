@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+section{
+    background-color: aqua;
+    
+}
+.box{
+    width: auto;
+    align-items: center;
+    height: auto;
+    float: left;
+}
+img, video{
+  width: 500px;
+  height: 500px;
+    border-radius: 15px;
+    margin: 10px;
+}
+.audio{
+  padding: 90px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  td, th, h2 {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tbody:nth-child(even) {
+    background-color: #dddddd;
+  }
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+ 

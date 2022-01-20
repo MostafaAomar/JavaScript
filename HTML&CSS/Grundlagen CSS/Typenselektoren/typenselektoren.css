@@ -1,0 +1,22 @@
+﻿body {
+    color: red;
+    font-size: 30px;
+    border: solid;
+}
+
+h1 {
+    color: blue;
+    border: inherit;
+}
+
+p {
+    color: green;
+}
+
+b {
+    border: inherit;
+}
+
+span {
+    border: inherit;
+}

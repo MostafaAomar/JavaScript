@@ -14,6 +14,7 @@ btn.addEventListener('click', addTodo);
 function addTodo() {
     // PUSH TO ARRAY
     todos.push(input.value); // Insert element into todos-array
+    
 
     // CREATE ELEMENTS
     let tblBody = document.createElement('tbody'); // Create tbody element

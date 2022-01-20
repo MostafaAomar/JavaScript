@@ -1,0 +1,76 @@
+﻿/* Wurzelelement: in HTLM-Dokumenten ist das immer html */
+:root {
+    font-size: 25px;
+}
+
+/* Alle Elemente, die leer sind */
+
+p:empty {
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+}
+
+/* erstes Kind */
+.container :first-child {
+    font-weight: bold;
+}
+
+/* letztes Kind */
+.container :last-child {
+    text-decoration: underline;
+}
+
+/* fünfte 5th Kind */
+.container :nth-child(5) {
+    color: red;
+}
+
+/* gerade Kinder */
+.container :nth-child(even) {
+    color: blue;
+}
+
+/* ungerade Kinder */
+.container :nth-child(odd) {
+    color: grey;
+}
+
+/* Kinder nach der Formel an+b 
+    wobei a und b Konstanten sind, die angegeben werden müssen 
+    also werden z.B. mit 3n+1 die Kinder 1, 4, 7, 10, 13, 16, 19*/
+.container :nth-child(3n+1) {
+    text-decoration: line-through;
+}
+
+/* "Einzelkinder, d.h. alle Element, die keine Geschwister haben */
+.container :only-child {
+    border: 2px solid black;
+}
+
+/* von jedem Typ wird der erste formatiert */
+.container :first-of-type {
+    color: brown;
+}
+
+/* von jedem Typ wird der letzte formatiert */
+ .container :last-of-type {
+    font-weight: 900;
+}
+
+.container :nth-of-type(odd) {
+    width: 300px;
+    background-color: blueviolet;
+}
+
+.container :nth-of-type(even) {
+    width: 300px;
+    background-color: rgb(43, 92, 226);
+}
+
+/* alle, die "alleine" sind */
+.container :only-of-type {
+    width: 400px;
+    background-color: yellow;
+    display: block;
+}

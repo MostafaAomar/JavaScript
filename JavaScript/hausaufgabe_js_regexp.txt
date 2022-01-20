@@ -1,0 +1,19 @@
+Hausaufgabe zur nächsten Woche. Selbstständiges erarbeiten und verstehen folgender Themen:
+
+Regular Expressions (reguläre Ausdrücke)
+- regexp datatypes	> 5min
+- regexp formulieren	> 5min
+- regexp Methoden	> 15min
+- regexp set of characters	> 15min
+- regexp built-in shortcuts	> 20min
+	\d
+	\w
+	\s
+	\D
+	\W
+	\S
+	.
+
+- regexp wiederholende patterns	> 10min
+	z.B. \d+
+	     \d*

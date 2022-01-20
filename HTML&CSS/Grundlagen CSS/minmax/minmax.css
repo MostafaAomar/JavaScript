@@ -1,0 +1,44 @@
+﻿html, body {
+    width:100%;
+    height: 100%
+}
+
+* {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+.width {
+    width: 40%;
+    height: auto;
+}
+
+.height {
+    width: auto;
+    height: 30%;
+}
+
+
+ /*darf nicht kleiner als 400px werden. */
+#test01 {
+    min-width: 400px;
+}
+
+/* darf nicht breiter als 400px werden */
+#test02 {
+    max-width: 400px;
+}
+
+
+/* darf nicht höher als 100px werden */
+#test03 {
+    max-height: 100px;
+}
+
+/* darf nicht kleiner als 100px werden */
+#test04 {
+    min-height: 100px;
+}

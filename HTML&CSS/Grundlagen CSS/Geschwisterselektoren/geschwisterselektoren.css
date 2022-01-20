@@ -1,0 +1,20 @@
+﻿span ~ i {
+    color: green;
+}
+
+p ~ b {
+    color: red;
+}
+
+html body > p > span ~ u {
+    color: pink;
+}
+
+/* 
+p span
+p > span
+p.klassennamen
+.klassennamen
+#idname
+p ~ span 
+*/

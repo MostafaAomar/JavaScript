@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Aufgabe-5.css">
+    <title>Aufgabe 5</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="box video">
+                    <video  controls>
+                    <source src="movie.mp4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <div class="box pic" >
+                    <picture>
+                        <source media="(min-width: 650px)" srcset="/img_car.jpg">
+                        <source media="(min-width: 465px)" srcset="/img_food.jpg">
+                        <img src="images.jfif">
+                      </picture>
+                </div>
+                <div class="box audio">
+                    <audio controls>
+                    <source src="horse.ogg" type="audio/ogg">
+                    <source src="movie.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  </audio>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <table>
+            <thead>
+                <th>Matrikel-Nr.</th>
+                <th>Name</th>
+                <th>Vorname</th>
+                <th>Punktzahl</th>
+                <th>Ergebnis</th>
+            </thead>
+          <tbody>
+            <tr>
+                <td>7596648</td>
+                <td>Meier</td>
+                <td>Andreas</td>
+                <td>18</td>
+                <td>Bestanden</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>7596648</td>
+                <td>Müller</td>
+                <td>Sophia</td>
+                <td>18</td>
+                <td>Bestanden</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>7596648</td>
+                <td>Schultze</td>
+                <td>Martin</td>
+                <td>18</td>
+                <td>Bestanden</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>7596648</td>
+                <td>Abricht</td>
+                <td>Jan</td>
+                <td>18</td>
+                <td>Bestanden</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>7596648</td>
+                <td>Krumm</td>
+                <td>Angelo</td>
+                <td>18</td>
+                <td>Bestanden</td>
+            </tr>
+        </tbody>
+
+
+            <tfoot>
+                <th colspan="5">Zusamenfassung</th> 
+            
+            <tr>
+                <td>Teilnehemer</td>
+                <td>8</td>
+                
+            </tr>
+            <tr>
+                <td>Bestanden</td>
+                <td>6</td>
+                
+            </tr>
+            <tr>
+                <td>Durchgefallen</td>
+                <td>2</td>
+                
+            </tr>
+            <tr>
+                <td>Durschnitt</td>
+                <td>13.75</td>
+                
+            </tr>
+        </tfoot>
+        </table>
+    </section>
+</body>
+</html>

@@ -1,0 +1,8 @@
+:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px grey, 0 0 8px grey;
+}
+
+:focus {
+    outline: 30px solid #ad34f5;
+}

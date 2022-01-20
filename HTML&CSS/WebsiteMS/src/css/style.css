@@ -1,0 +1,417 @@
+﻿/* Farben
+
+Blau: #1F4E8C
+Grau: #3D3F45
+Hellgrau: #E5E5E5
+Rot: #A62C21
+
+ */
+
+/* Globale Einstellungen */
+
+body {
+    
+    height: 2000px;
+    font-family: 'Raleway', 'Lato', Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Ende Globale Einstellungen */
+
+/* Allgemeine Einstellungen */
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.active {
+    background-color: #A62C21 !important;
+}
+
+.wichtig {
+    color: #FD5C3F;
+}
+
+.screenreader {
+    display: none;
+}
+
+.btn-typ-1 {
+    background-color: #A62C21;
+    border: none;
+    color: #FFF;
+    padding: .3rem .6rem;
+}
+
+.btn-typ-2 {
+    background-color: transparent;
+    border: 2px solid #FFF;
+    color: #FFF;
+}
+
+.btn-typ-2:hover {
+    color: #A62C21;
+    border: 2px solid #A62C21;
+}
+
+
+/* Ende Allgemeine Einstellungen */
+
+/* Start headernav */
+
+/* Desktop - Navigation */
+
+.headernav {
+    width: 100%;
+    height: 50px;
+    background-color: #3D3F45;
+    position: relative; 
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.headernav .container, 
+.headernav .row, 
+.headernav .column-6 {
+    height: 100%;
+}
+
+.headernav .column-6 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.headernav a > img {
+    height: 30px;
+    width: auto;
+    float: left;
+    margin-top: 10px;
+}
+
+.headernav ul {
+    padding: 0;
+    height: 100%;
+    float: right;
+}
+
+.headernav ul > li {
+    display: inline-block;
+    height: 100%;
+    padding: .3rem;
+}
+
+.headernav ul > li > a {
+   margin-top: .5rem;
+   display: inline-block;
+}
+
+.headernav ul > li > a:link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.headernav ul > li > a:hover {
+    color: #E5E5E5;
+    text-decoration: none;
+}
+
+.headernav ul > li > a:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.headernav ul > li > a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+
+/* Ende Desktop - Navigation */
+
+/* Start Mobile - Navigation */
+
+.mobile-nav-button {
+    color: #FFF;
+    float: right;
+    font-size: 2rem;
+    border: 2px solid #FFF;
+    height: 33px;
+    width: 33px;
+    position: relative;
+    margin-top: 8px;
+    margin-bottom: 9px;
+}
+
+.mobile-nav-button > span {
+    position: absolute;
+    left: 5px;
+    bottom: -4px;
+
+}
+
+.mobile-nav-content > ul > li {
+    display: block;
+    background-color:#3D3F45;
+    padding: 0 1rem;
+    height: 2.5rem;
+}
+
+.mobile-nav-dropdown {
+    position: relative;
+    float: right;
+    
+}
+
+.mobile-nav-content {
+    position: absolute;
+    right: 0;
+    margin-top: 50px;
+    display: none;
+}
+
+.mobile-nav-dropdown:hover > .mobile-nav-content {
+    display: block;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+    .mobile-nav {
+        display: block;
+    }
+
+}
+
+/* Ende Mobile - Navigation */
+
+/*  Ende headernav */
+
+/* Start Banner */
+
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+.header-banner {
+    width: 100%;
+    height: 0;
+    padding-top: 20.83%;
+    background: url("../img/hintergrund.jpg") no-repeat center center;
+    background-size:  contain;
+}
+
+/* Warum padding-top: 20.83%?
+    Maße des Bildes: 1920 breit, 400 hoch
+    400/1920 = 20.83%
+ */
+
+.header-banner-klein {
+    width: 100%;
+    height: 0;
+    padding-top: 15.625%;
+    background: url("../img/hintergrund-klein.jpg") no-repeat center center;
+    background-size:  contain;
+}
+
+/* Warum padding-top: 20.83%?
+    Maße des Bildes: 1920 breit, 300 hoch
+    300/1920 = 15.625%
+ */
+
+ /* Start Banner */
+
+ /* Start Newsletter */
+
+ .newsletter-bereich {
+     background-color: #3D3F45;
+     width: 100%;
+     padding-top: 0;
+     padding-bottom: 0;
+ }
+
+ .nl-werbetext {
+     color: #FFF;
+     font-size: 1.2rem;
+ }
+
+ .newsletter-bereich input {
+     height: 1.5rem;
+     border: none;
+     padding-left: .4rem;
+     width: 70%;
+
+ }
+
+ #nl-btn {
+     height: 1.5rem;
+ }
+
+ .nl-form {
+     float: right;
+     width: 100%;
+     text-align: right;
+ }
+
+ @media (max-width: 1772px) {
+    .newsletter-bereich input {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1312px) {
+    .newsletter-bereich input {
+        width: 100%;
+    }
+
+    #nl-btn {
+        width: 100%;
+        margin-top: 7px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nl-werbetext {
+        display: none;
+    }
+    
+    #nl-btn {
+        margin-top: 7px;
+    }
+}
+
+/* Ende Newsletter */
+
+/* Start Leistungen-Bereich */
+
+h1, h2 {
+    margin-bottom: 1rem;
+}
+
+section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    /* border: 10px dotted red; */
+}
+
+.intro-container {
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+}
+
+.intro-container > h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.intro-container > p {
+    font-size: 1.2rem;
+}
+
+.leistungs-box {
+    background-color: #3D3F45;
+    color: #FFF;
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 3rem 1.5rem;
+    margin-bottom: 1.7rem;
+}
+
+/* alle Boxen sollen mehr in die Mitte rücken
+    => opitmaler Einsatz für Pseudoklassen, weil zwei Boxen müssen nach rechts rutschen (1,3)
+        zwei Boxen müssen nach links rutschen (2,4)
+        =>  1, 3 (ungerade) bekommen einen kleineren margin-right
+            2, 4 (gerade) bekommen einen kleineren margin-left*/
+
+
+#leistungen-bereich .column-3:nth-child(even) > .leistungs-box {
+    margin-left: 1rem;
+    margin-right: auto;
+}   
+
+#leistungen-bereich .column-3:nth-child(odd) > .leistungs-box {
+    margin-left: auto;
+    margin-right: 1rem;
+} 
+
+/* btn-typ-2 + Folgendes */
+.leistung-ansehen-btn  {
+    text-decoration: none;
+    height: 40px;
+    width: 40%;
+    min-width: 120px;
+    display: inline-block;
+    padding-top: .5rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 1366px) {
+    .leistungs-box {
+        width: 80%;
+    }
+    .intro-container {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+    section {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .leistungs-box {
+        width: 100%;
+    }
+    .intro-container {
+        width: 100%;
+        margin-bottom: .6rem;
+    }
+    section {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #leistungen-bereich .column-3:nth-child(even) > .leistungs-box {
+        margin-left: auto;
+        margin-right: auto;
+    }   
+    
+    #leistungen-bereich .column-3:nth-child(odd) > .leistungs-box {
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    .intro-container {
+        margin-bottom: 0;
+    }
+    
+    section {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .leistungs-box {
+        margin-bottom: .5rem;
+    }
+}
+
