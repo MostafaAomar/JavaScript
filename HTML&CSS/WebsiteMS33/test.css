@@ -1,0 +1,9 @@
+﻿
+
+.container > .unterklasse p {
+    color: blue;
+}
+
+.container p {
+    color: red;
+}

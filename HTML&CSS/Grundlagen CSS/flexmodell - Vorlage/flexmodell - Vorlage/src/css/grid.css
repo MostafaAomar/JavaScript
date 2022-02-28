@@ -1,0 +1,130 @@
+/* Kommentar: Farben
+
+Blau: #1F4E8C
+Grau: #3D3F45
+Hellgrau: #E5E5E5
+Rot: #A62C21
+
+ */
+
+body {
+    
+    font-family: 'Raleway', 'Lato', Helvetica, sans-serif;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+[class*='column-'] {
+    background-color: #3D3F45;
+}
+
+p {
+    background-color: #1F4E8C;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+
+    /* height: 400px;
+    background-color: grey; */
+}
+
+/* Die Rows dienen nur der Ordnung, so dass die Columns sauber nebeneinander floate 
+clearfix */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="column-"] {
+    float:left;
+    padding: 0.7rem;
+    text-align: justify;
+}
+
+/* Jede Column-1 bekommt genau 1/6 der Breite:
+ 100% / 6 = 16.666% */
+.column-1 {
+    width: 16.666%;
+}
+
+.column-2 {
+    width: 33.333%;
+}
+
+.column-3 {
+    width: 50%;
+}
+
+.column-4 {
+    width: 66.666%;
+}
+
+.column-6 {
+    width: 100%
+}
+
+/* 
+Breakpoints: Wann bricht das Layout um?
+
+für alle Desktop-Geräte oder größer genügt das Standardlayout, das wir jetzt haben.
+1024px (Tablet quer)
+768px  (Tablet hochkant)
+480px (Mobiltelefon und alles was kleiner ist)
+*/
+
+@media (max-width: 1024px) {
+    .column-1 {
+        width: 33.333%;
+    }
+}
+
+@media (max-width: 768px) {
+    .column-1 {
+        width: 50%;
+    }
+    
+    .column-2 {
+        width: 100%;
+    }
+    
+    .column-3 {
+        width: 100%;
+    }
+
+    .column-4 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .column-1 {
+        width: 100%;
+    }
+    
+    .column-2 {
+        width: 100%;
+    }
+    
+    .column-3 {
+        width: 100%;
+    }
+
+      .column-4 {
+        width: 100%;
+    }
+
+}
+
+
+/* Ab hier wird geflext... */

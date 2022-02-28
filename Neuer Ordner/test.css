@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+   
+}
+form{
+    background-color: aqua;
+}
+#sec1 > #myCanvas{
+    /* background-color: green;
+    margin: 14vh auto; */
+    display: block;
+    
+}
+canvas{
+    width: 300px;
+    height: 300;
+    background-color: ivory;
+    border: 1px solid red;
+}
+#sec1{
+    
+    height: 50vh;
+    width: 50%;
+    margin: 50px auto;
+    border: 1px solid blue;
+}
+#test{
+    background-color: yellow;
+    height: 50vh;
+}
+
+/* @media (max-width: 1024px){
+    .sec1 > #myCanvas{
+        
+        margin: 7vh auto;
+    }
+}
+
+@media (max-width: 768px){
+    .sec1 > #myCanvas{
+        
+        margin: 14vh auto;
+    }
+} */

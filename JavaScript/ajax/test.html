@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+      color: black;
+      text-align: center;
+      font-size: 15px;
+    }
+    div:nth-of-type(even){
+        background-color: rgb(177 164 151);
+    }
+    div:nth-of-type(odd){
+        background-color:blanchedalmond;
+    }
+    h4{
+        margin: 0 auto;
+    }
+    button{
+        margin-bottom: 3rem;
+    }
+    img{
+        width: 200px;
+        height: auto;
+        display: block;
+        padding-bottom: 2rem;
+        margin: 0 auto;
+    }
+</style>
+<body>
+    <button onclick=myFunc()>Show the countries </button>
+   <div id="demo"></div>
+
+    <script>
+     
+
+     function myFunc() {
+         let xhr = new XMLHttpRequest()
+         xhr.open('GET', 'https://restcountries.com/v2/all', true) //here is the link that we can get the informations that we need 
+         xhr.onload = function () {
+             if (xhr.status ==200){ 
+                 
+                 let countries = JSON.parse(this.response) 
+                 console.log(countries);
+                 countries.forEach(country =>{
+                     const countryCard = document.createElement('div')
+                     const countryCardImg = document.createElement('img')
+                     const countryCapital = document.createElement('h4')
+                     const countryLang = document.createElement('h4')
+                     countryCard.innerHTML = "Country Name is   " + country.name // we call the name of the country
+                     countryCardImg.src = country.flag    // we call the img flag of the country
+                     countryCapital.innerHTML= "Capiatl Name is   " + country.capital
+                     countryLang.innerHTML= "The Population is " +" : " + country.population
+
+                     
+                     countryCard.appendChild(countryCapital)
+                     countryCard.appendChild(countryLang)
+                     countryCard.appendChild(countryCardImg) //we add the info to the name
+                     document.getElementById('demo').appendChild(countryCard)
+                 })
+             }
+         }
+         xhr.send()
+     }
+
+    </script>
+</body>
+</html>

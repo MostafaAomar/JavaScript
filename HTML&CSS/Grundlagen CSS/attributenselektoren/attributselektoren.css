@@ -1,0 +1,39 @@
+/* Element mit einem bestimmten Attribut */
+[href] {
+    background-color: grey;
+}
+
+/* Element mit einem bestimmten Attribut (id) und einem bestimmten Wert (DasIstEinAnker) - case sensitive */
+[id='DasIstEinAnker'] {
+    display: block;
+}
+
+/* Element mit einem bestimmten Attribut, welches in einem seiner Werte einen bestimmten Wert haben kann */
+[class~='hey'] {
+    height: 150px;
+}
+
+/* Element mit einem bestimten Attribut, welches einen bestimmten Wert hat oder mit einem Wert beginnt, worauf ein - folg */
+[class|='test'] {
+    width: 500px;
+}
+
+/* Element mit einem bestimmten Attribut, welches mit einem bestimmten Wert beginnt */
+[title^='Ich bin'] {
+    border: 5px solid orange;
+}
+
+/* Element mit einem bestimmten Attribut, welches mit einem bestimmten Wert endet */
+[title$='Ankerelement'] {
+    text-decoration: none;
+}
+
+/* Element mit einem bestimmten Attribut, welches einen bestimmten Wert an irgendeiner Stelle hat */
+[id*='IstEin'] {
+    color: white;
+}
+
+/* durch i an dieser Stelle wird case sensitive aufgehoben */
+[id*='istein' i] {
+    font-weight: bold;
+}
