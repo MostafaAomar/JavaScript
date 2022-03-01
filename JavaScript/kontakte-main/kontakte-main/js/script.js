@@ -64,6 +64,7 @@ const initData = parse(getFromLocalStorage("lsJsonObject"));
 // Initialize kontakte[] with LS daat
 initKontakte(initData);
 
+
 // FUNKTIONEN
 // FUNCTIONS
 function checkInputsNotEmpty(domArray) {
